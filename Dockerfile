@@ -65,6 +65,7 @@ RUN apk --update add \
     git \
     ncurses-terminfo \
     python \
+    py-pip \
 # YouCompleteMe
     && apk add --virtual build-deps \
     build-base \
@@ -98,6 +99,8 @@ RUN apk --update add \
     /var/log/* \
     /var/tmp/* \
     && mkdir /var/cache/apk
+
+# RUN pip install -U flake8
 
 USER $UNAME
 
