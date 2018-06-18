@@ -30,6 +30,13 @@ else
   match OverLength /\%81v.\+/
 endif
 
+""""""""""""""""""""""""""""""
+" => Plugins
+""""""""""""""""""""""""""""""
+execute pathogen#infect()
+
+filetype plugin indent on
+syntax on
 
 """"""""""""""""""""""""""""""
 " => MRU plugin
